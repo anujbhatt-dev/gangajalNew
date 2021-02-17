@@ -13,6 +13,7 @@ import { Animator, ScrollContainer, ScrollPage, batch,FadeUp,ZoomInScrollOut,Zoo
 import Tilt from 'react-parallax-tilt';
 import {Link} from "react-router-dom"
 import Benefits from "./benefits/benefits"
+import Start from "./start/start"
 
 
 class Landing extends Component {
@@ -96,12 +97,7 @@ class Landing extends Component {
         <Animator animation={batch(Fade(), Sticky(), MoveOut(0, -200))}>
 
         <div  className={"page page0"}>
-          <h1 id="0" className="page__head">why Us</h1>
-          <p className="page__text">Lorem ipsum olor sit amet, consectetur adipisicing elit. In ducimus odit error quae, sapiente doloremque omnis ut. Temporibus sed nulla id porro! Dolor blanditiis, nostrum illo sint voluptates quis nisi.</p>
-
-
-
-
+         <Start/>
         </div>
         </Animator>
       </ScrollPage>
