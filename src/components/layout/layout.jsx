@@ -13,7 +13,8 @@ import logo from "../../assets/images/logo.svg";
 import $ from 'jquery'
 import ripples from 'jquery.ripples';
 import GoToTop from "./fixed/gototop"
-
+import Benefits from "./landing/benefits/benefits"
+import Whyus from "./landing/whyus/whyus"
 
 class Layout extends Component{
 
@@ -47,16 +48,23 @@ class Layout extends Component{
             <img id="logo" className="landing__s1_img" src={logo} alt="" />
             {this.state.mobile?<NavMob/>:<Nav/>}
             <Switch>
-               <Route exact path="/">
-                   <Landing mobile={this.state.mobile}/>
-                   {!this.state.mobile?<Wave/>:null}
+            <Route exact path="/">
+                   <Landing/>
+                   <Wave/>
                </Route>
-               <Route exact path="/contactUs">
+               <Route exact path="/reachus">
                    <Contact/>
                </Route>
                <Route exact path="/about">
                    <About/>
                </Route>
+               <Route exact path="/benefits">
+                   <Benefits/>
+               </Route>
+               <Route exact path="/whyus">
+                   <Whyus/>
+               </Route>
+
 
             </Switch>
             <GoToTop/>
