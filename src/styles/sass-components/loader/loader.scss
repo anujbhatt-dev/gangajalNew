@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
+
+.loader{
+  // background: radial-gradient(circle, rgba(45,232,236,0.8690826672465861) 26%, rgba(232,246,249,0.24723392775078779) 65%, rgba(232,246,249,0.3200630594034489) 100%);
+  // background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(148,187,233,1) 100%);
+  // background-size: contain;
+  // background-position: center;
+  // background: url("../../../assets/images/gradient.jpg");
+  height: 100vh;
+  width: 100vw;
+  background: #b2daec;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  color: $color-grey-dark-3;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 4rem;
+  letter-spacing: 2px;
+  backface-visibility: hidden;
+  font-family: 'Roboto', cursive;
+  // font-weight: bold;
+  flex-flow: column;
+  overflow: hidden;
+  // opacity: .1;
+  position:fixed;
+  top: 0;left:0;
+  z-index: 10000;
+  & > div{
+    margin: 2rem 0;
+    font-family: 'Inter', sans-serif;
+    letter-spacing: 1px;
+
+  }
+}
+.loaded{
+  // display: none;
+  animation: foaded .5s linear;
+  animation-fill-mode: forwards;
+}

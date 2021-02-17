@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald:600');
+
+#svg_7 {
+  filter: url(#waterTexture);
+  font-size: 8rem;
+  font-family: 'Oswald', sans-serif;
+
+}
+
+.flexer{
+  display:flex;
+  justify-content: center;
+
+}
+
+svg{
+}
+
+defs{
+}
+
+g{
+  margin: 0 auto;
+
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+// ::selection{
+//    background: $color-primary-blue;
+//
+// }
+
+html{
+  // 1 rem
+  // scroll-behavior: smooth;
+  font-size: 60.5%;
+  font-family: sans-serif;
+  scroll-behavior: smooth;
+  letter-spacing: .5px;
+  font-family: 'Montserrat', sans-serif;
+  // color:$color-gig-font;
+
+  // overflow-y: scroll;
+
+  @include respond(tab-land){
+    font-size: 56.25%;
+  }
+  @include respond(tab-port){
+    font-size: 50%;
+  }
+  @include respond(phone){
+    font-size: 45%;
+  }
+  @include respond(big-desktop){
+    font-size: 75%;
+  }
+}
+
+body{
+  // cursor: none;
+  margin: 0;
+  // margin-top: 5rem;
+  padding: 0;
+  overflow-x:hidden;
+  font-family: "Roboto", sans-serif;
+  @include respond(tab-land){
+    padding: 0 1rem;
+    background-image: none;
+  }
+}
+.App{
+  // background: $color-exim-green;
+    // cursor: none;
+    overflow-x: hidden;
+}
+.heading-primary{
+  font-size: 3.6rem;
+  color: $color-black;
+  font-weight: bolder;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 5rem 0;
+  // font-weight: 500;
+  @include respond(tab-port){
+    font-size: 2.2rem;
+  };
+}
+.heading-secondary{
+  font-size: 3.6rem;
+  color: $color-exim-grey;
+  font-weight: bolder;
+  margin-left: 25rem;
+}
+.hr{
+  border: none;
+  border-bottom: 8px dotted rgba($color-grey,.8);
+  margin: 2rem auto 0 auto;
+  width: 5rem;
+}
+.layout{
+  // perspective: 1000px;
+}

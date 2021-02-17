@@ -1,0 +1,33 @@
+// abstracts
+@import "styles/abstracts/mixins";
+@import "styles/abstracts/variables";
+@import "styles/abstracts/animation";
+
+// base
+@import "styles/base/base";
+@import "styles/base/utils";
+
+//loader
+@import "styles/sass-components/loader/loader";
+
+//cursor
+@import "styles/sass-components/cursor";
+
+//footer
+@import "styles/sass-components/wave/wave";
+
+//sass-components
+@import "styles/sass-components/landing/landing";
+
+//contact
+@import "styles/sass-components/contact/contact";
+
+//pages
+@import "styles/sass-components/page/page";
+
+//fixed
+@import "styles/sass-components/fixed/social";
+@import "styles/sass-components/fixed/gototop";
+@import "styles/sass-components/fixed/navigation";
+@import "styles/sass-components/fixed/footer";
+@import "styles/sass-components/button";

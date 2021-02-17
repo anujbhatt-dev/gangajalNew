@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:200,900');
+:root {
+  --text-color: hsla(210, 50%, 85%, 1);
+  --shadow-color: hsla(210, 40%, 52%, .4);
+  --btn-color: hsl(210, 80%, 42%);
+  --bg-color: #141218;
+}
+
+
+.nav{
+  position: fixed;
+  z-index: 1000;
+  top:5.3rem;
+  right: 15rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  // transform: translateX(-50%);
+
+  // flex-flow: column;
+  &__item{
+    margin: 0 1rem;
+    overflow:hidden;
+    text-decoration: none;
+    transition: all .5s;
+    // background-color: var(--btn-color);
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    font-family: "Roboto" , sans-serif;
+    color: $color-grey-dark-3;
+    // font-weight: 900;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    &:hover{
+      transform: translateY(-3px);
+    }
+    &:focus{
+      transform: translateY(-1px);
+    }
+  }
+  &__home{
+     border: 1px solid rgba($color-grey-dark-3,.5);
+     border-radius: 25px;
+  }
+}
+
+
+
+
+.navMob{
+  &__toggler{
+    position: fixed;
+    z-index: 1001;
+    font-size: 3rem;
+    top: 3rem;
+    left: 3rem;
+  }
+  &__items{
+    background: $color-white;
+    // background: tomato;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    height: 100vh;
+  }
+}
+.openNav{
+  animation: openNav .5s linear;
+  width: 80vw;
+  display: flex;
+  flex-flow: column;
+  padding-right: 10rem;
+  padding-top: 10rem;
+  padding-left: 2rem;
+  & a{
+    margin-bottom: 2rem;
+    display: flex;
+  }
+}
+.closeNav{
+  animation: closeNav .5s linear;
+  width: 0;
+  padding-right: 0rem;
+  padding-top: 0rem;
+  padding-left: 0rem;
+  & a{
+    font-size: 0;
+    margin-bottom: 0rem;
+    display: none;
+  }
+}

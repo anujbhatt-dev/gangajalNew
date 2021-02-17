@@ -1,0 +1,143 @@
+@keyframes foaded {
+   0%{
+     display: flex;
+     opacity: 1;
+     visibility: visible;
+   }
+   100%{
+     display: flex;
+     opacity: 0;
+     visibility:hidden;
+   }
+}
+
+@keyframes openNav {
+   0%{
+     clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+   }
+   // 25%{
+   //   clip-path: polygon(0 0, 16% 0, 39% 100%, 0 100%);
+   // }
+   50%{
+     clip-path: polygon(0 0, 16% 0, 72% 100%, 0 100%);
+   }
+   // 75%{
+   //   clip-path: polygon(0 0, 54% 0, 89% 100%, 0 100%);
+   // }
+   100%{
+     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+   }
+}
+
+@keyframes closeNav {
+  0%{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    width: 80vw;
+  }
+  // 25%{
+  //   clip-path: polygon(0 0, 16% 0, 39% 100%, 0 100%);
+  // }
+  50%{
+    clip-path: polygon(0 0, 16% 0, 72% 100%, 0 100%);
+    width: 80vw;
+  }
+  // 75%{
+  //   clip-path: polygon(0 0, 54% 0, 89% 100%, 0 100%);
+  // }
+  100%{
+    clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+    width: 80vw;
+  }
+}
+
+
+@keyframes reach {
+   0%{
+     clip-path: polygon(75% 0, 100% 0, 100% 30%, 88% 16%);
+   }
+   50%{
+     clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 50%);
+   }
+   100%{
+     clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+   }
+}
+
+@keyframes home {
+    0%{
+       clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+    }
+
+    50%{
+      clip-path: polygon(100% 0, 20% 0, 50% 100%, 100% 100%);
+    }
+
+    100%{
+      clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
+    }
+}
+
+@keyframes change1   {
+     0%{
+       opacity: 0;
+       transform: scale(0);
+     }
+     100%{
+       opacity: 1;
+       transform: scale(1);
+     }
+}
+
+@keyframes change2   {
+  0%{
+    opacity: 0;
+    transform: scale(0);
+  }
+  100%{
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes change2   {
+  0%{
+    opacity: 0;
+    transform: scale(0);
+  }
+  100%{
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes change3   {
+  0%{
+    opacity: 0;
+    transform: scale(0);
+  }
+  100%{
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes change4   {
+  0%{
+    opacity: 0;
+    transform: scale(0);
+  }
+  100%{
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@keyframes change5   {
+  0%{
+    opacity: 0;
+    transform: scale(0);
+  }
+  100%{
+    opacity: 1;
+    transform: scale(1);
+  }
+}
