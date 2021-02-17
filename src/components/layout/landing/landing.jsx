@@ -9,9 +9,9 @@ import Whyus from "./whyus/whyus"
 import Aos from "aos"
 import "aos/dist/aos.css"
 import { withRouter } from "react-router-dom"
-import { Animator, ScrollContainer, ScrollPage, batch,FadeUp,ZoomInScrollOut,ZoomInScrollIn,FlexCenterStyle, Fade, FadeIn, Move, MoveIn, MoveOut, Sticky, StickyIn, ZoomIn } from "react-scroll-motion";
+import { Animator, ScrollContainer, ScrollPage, batch, FadeUp, ZoomInScrollOut, ZoomInScrollIn, FlexCenterStyle, Fade, FadeIn, Move, MoveIn, MoveOut, Sticky, StickyIn, ZoomIn } from "react-scroll-motion";
 import Tilt from 'react-parallax-tilt';
-import {Link} from "react-router-dom"
+import { Link } from "react-router-dom"
 import Benefits from "./benefits/benefits"
 import Start from "./start/start"
 
@@ -22,12 +22,12 @@ class Landing extends Component {
     music: new Audio(music),
     paused: true,
     maxHash: 3,
-    scrollAllowed:true,
-    currentHash:1,
+    scrollAllowed: true,
+    currentHash: 1,
 
   }
 
-   scrollCount=0;
+  scrollCount = 0;
 
   musicHandler = () => {
     if (this.state.paused) {
@@ -74,15 +74,15 @@ class Landing extends Component {
 
   }
 
-   nowHandler=()=>{
-      document.querySelector(".page__head_span").style.transform = "scale(28)";
-      document.querySelector(".page__head_span").style.background = "white";
-      document.querySelector(".page__head_span").style.zIndex= "10000";
-      document.querySelector(".page__head_span").style.overflow= "visibile";
-      setTimeout(()=>{
-        this.props.history.push("/contactUs");
-      },50)
-   }
+  nowHandler = () => {
+    document.querySelector(".page__head_span").style.transform = "scale(28)";
+    document.querySelector(".page__head_span").style.background = "white";
+    document.querySelector(".page__head_span").style.zIndex = "10000";
+    document.querySelector(".page__head_span").style.overflow = "visibile";
+    setTimeout(() => {
+      this.props.history.push("/reachUs");
+    }, 50)
+  }
 
   render() {
 
@@ -92,58 +92,59 @@ class Landing extends Component {
 
 
 
-      <ScrollContainer>
-      <ScrollPage page={0}>
-        <Animator animation={batch(Fade(), Sticky(), MoveOut(0, -200))}>
+        <ScrollContainer>
+          <ScrollPage page={0}>
+            <Animator animation={batch(Fade(), Sticky(), MoveOut(0, -200))}>
 
-        <div  className={"page page0"}>
-         <Start/>
-        </div>
-        </Animator>
-      </ScrollPage>
+              <div className={"page page0"}>
+                <Start />
+              </div>
+            </Animator>
+          </ScrollPage>
 
-      <ScrollPage page={1}>
-        <Animator animation={batch(Fade(), MoveOut(0, -200))}>
-        <Whyus/>
-         <hr className="hr"/>
-        </Animator>
-      </ScrollPage>
+          <ScrollPage page={1}>
+            <Animator animation={batch(Fade(), MoveOut(0, -200))}>
+              <Whyus />
+              <hr className="hr" />
+            </Animator>
+          </ScrollPage>
 
-      <ScrollPage page={2}>
-        <Animator animation={ZoomInScrollOut}>
-        <div  className={"page page1 page11"}>
-          <p className="page__text">Lorem ipsum olor sit amet, consectetur adipisicing elit. In ducimus odit error quae, sapiente doloremque omnis ut. Temporibus sed nulla id porro! Dolor blanditiis, nostrum illo sint voluptates quis nisi.</p>
-          <h1 id="1" className="page__head">call us <span onClick={this.nowHandler} className="page__head_span">now</span> </h1>
+          <ScrollPage page={2}>
+            <Animator animation={ZoomInScrollOut}>
+              <div className={"page page1 page11"}>
+                <p className="page__text">Want to be our part, Become the first AyushGangjal dealer of your region and enjoy the remarkable profit.
+                   Let's have a chat.</p>
+                <h1 id="1" className="page__head">call us <span onClick={this.nowHandler} className="page__head_span">now</span> </h1>
 
-        </div>
-         <hr className="hr"/>
-        </Animator>
-      </ScrollPage>
-
-
-
-      <ScrollPage page={3}>
-        <Animator animation={batch(Fade())}>
-            <h1 id="3" className="heading-primary">benifits of gangajal</h1>
-            <Benefits mobile={this.props.mobile}/>
-            <hr className="hr"/>
-        </Animator>
-      </ScrollPage>
+              </div>
+              <hr className="hr" />
+            </Animator>
+          </ScrollPage>
 
 
 
+          <ScrollPage page={3}>
+            <Animator animation={batch(Fade())}>
+              <h1 id="3" className="heading-primary">benifits of gangajal</h1>
+              <Benefits mobile={this.props.mobile} />
+              <hr className="hr" />
+            </Animator>
+          </ScrollPage>
 
-      <ScrollPage page={4}>
-        <Animator animation={ZoomInScrollOut}>
-        <div  className={"page "}>
-          <h1 id="3" className="page__head">Ganga facts</h1>
-          <p className="page__text">Lorem ipsum olor sit amet, consectetur adipisicing elit. In ducimus odit error quae, sapiente doloremque omnis ut. Temporibus sed nulla id porro! Dolor blanditiis, nostrum illo sint voluptates quis nisi.</p>
 
-        </div>
-        </Animator>
-      </ScrollPage>
-    </ScrollContainer>
-    </div>
+
+
+          <ScrollPage page={4}>
+            <Animator animation={ZoomInScrollOut}>
+              <div className={"page "}>
+                <h1 id="3" className="page__head">Ganga facts</h1>
+                <p className="page__text">Lorem ipsum olor sit amet, consectetur adipisicing elit. In ducimus odit error quae, sapiente doloremque omnis ut. Temporibus sed nulla id porro! Dolor blanditiis, nostrum illo sint voluptates quis nisi.</p>
+
+              </div>
+            </Animator>
+          </ScrollPage>
+        </ScrollContainer>
+      </div>
     )
   }
 }

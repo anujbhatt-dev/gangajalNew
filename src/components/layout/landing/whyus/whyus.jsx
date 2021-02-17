@@ -11,25 +11,29 @@ class Whyus extends Component {
     cos: [
       {
         id: 0,
-        title: "Exim management",
-        content: "Being an exim manager one manages export/import process, foreseeing movement of goods and being in touch with freight forwarder, logistics, retailers and manufaturer. Exim manager also handles documents, primary responsibilities and many more."
+        title: "Proud To Be First",
+        content: "We are first and only cretified company to trade gangajal. We are first certified company in gangaotri valley to consume gangajal."
       }, {
         id: 1,
-        title: "Freight Forwarder",
-        content: "Freight forwarders are master of trade. Giving recommendation to the exporter, performing freight operation, looking over documentation. Any business that is in import-export does require freight forwarder for their unique versatility."
+        title: "Trust Is Important",
+        content:`We are certified company from all the big and important names.
+        FSSAI, ISO, BIS and Uttarakhand Goverment have approved our work and product.`,
       }, {
         id: 2,
-        title: "Merchant export/importer",
-        content: "Export-import is the most effective money-making career. Know the global market and earn foreign exchange, develop country’s economy, tax concession, improve in sales and profit, increase in foreign sale and many more benefits one can get if stepped in exim world"
+        title: "Genuine and Pure",
+        content: `We are authorized to consume Gangajal directly from the Ganga river.
+        Our factory posses capabilities of providing untouched and pure Gangajal.`,
       }, {
         id: 3,
-        title: "Logistic manager",
-        content: "As logistics manager you can organize the storage and distribution of goods. Also, to ensure that orders are carried out correctly. A logistics manager must wear a variety of hats throughout the workday."
+        title: "Fit For Driking",
+        content: `FSSAI have confirmed our Gangajal to be fit for drinking.
+        We use UV lazers to kill harmfull bacterias and viruses without adding or removing any content from or to Gangajal.`,
       },
       {
         id: 4,
-        title: "In CHA",
-        content: "After getting certified by exim education one can work under Custom House Agent, and with a good experience can tuen as CHA. work in shipping line, NVOCC , export sales manager and step in real organized and easy money making world ."
+        title: "Staright From Himalayas",
+        content:`We are closest Certified comapny from gangotri which is authorized to produce gangajal as drinking water.
+        Our Machines are eshtablished in himalyas far from any mass gathering regions.`,
       }],
     selectedId: 1,
     // cosContent:"Being an exim manager one manages export/import process, foreseeing movement of goods and being in touch with freight forwarder, logistics, retailers and manufaturer. Exim manager also handles documents, primary responsibilities and many more."
