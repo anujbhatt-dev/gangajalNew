@@ -74,6 +74,7 @@ class Landing extends Component {
 
   }
 
+
   nowHandler = () => {
     document.querySelector(".page__head_span").style.transform = "scale(28)";
     document.querySelector(".page__head_span").style.background = "white";
@@ -85,6 +86,16 @@ class Landing extends Component {
   }
 
   render() {
+
+    // <ScrollPage page={4}>
+    //   <Animator animation={ZoomInScrollOut}>
+    //     <div className={"page "}>
+    //       <h1 id="3" className="page__head">Ganga facts</h1>
+    //       <p className="page__text">Lorem ipsum olor sit amet, consectetur adipisicing elit. In ducimus odit error quae, sapiente doloremque omnis ut. Temporibus sed nulla id porro! Dolor blanditiis, nostrum illo sint voluptates quis nisi.</p>
+    //
+    //     </div>
+    //   </Animator>
+    // </ScrollPage>
 
     return (
       <div className="landing">
@@ -134,15 +145,7 @@ class Landing extends Component {
 
 
 
-          <ScrollPage page={4}>
-            <Animator animation={ZoomInScrollOut}>
-              <div className={"page "}>
-                <h1 id="3" className="page__head">Ganga facts</h1>
-                <p className="page__text">Lorem ipsum olor sit amet, consectetur adipisicing elit. In ducimus odit error quae, sapiente doloremque omnis ut. Temporibus sed nulla id porro! Dolor blanditiis, nostrum illo sint voluptates quis nisi.</p>
 
-              </div>
-            </Animator>
-          </ScrollPage>
         </ScrollContainer>
       </div>
     )

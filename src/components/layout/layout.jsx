@@ -45,7 +45,8 @@ class Layout extends Component{
       // <Footer/>
         <div className="layout">
             <Loader loaded={this.state.loaded}/>
-            <img id="logo" className="landing__s1_img" src={logo} alt="" />
+
+            <div id="logo" className="landing__s1_img"><img className="landing__s1_i" src={logo} alt=""/> <div className="landing__s1_1">Ayush Gangajal</div> <div className="landing__s1_2"></div> </div>
             {this.state.mobile?<NavMob/>:<Nav/>}
             <Switch>
             <Route exact path="/">
