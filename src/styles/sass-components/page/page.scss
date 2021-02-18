@@ -67,12 +67,13 @@
   font-weight: lighter;
   &__text{
     font-size: 1.5rem;
-    width: 60rem;
+    max-width: 60rem;
     line-height: 2;
     @include respond(phone){
-      font-size: 2rem;
+      // font-size: 2rem;
+      font-weight: 400;
       width: auto;
-      padding: 2rem;
+      padding: 2rem 3rem;
     }
   }
   &__pageUp{
