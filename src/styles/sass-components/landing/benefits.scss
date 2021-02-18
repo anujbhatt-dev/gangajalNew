@@ -2,7 +2,7 @@
   position: relative;
   &__wrapper{
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
     // flex-direction: column;
     height: 70vh;
@@ -13,9 +13,9 @@
   perspective: 1000px;
   &__text{
     // background: $gangajal-primary;
-    width:80rem;
-    padding: 5rem;
-    margin-right: 10rem;
+    width:60rem;
+    padding: 2rem;
+    margin-left: 5rem;
     // border-bottom-left-radius: 100px;
     @include respond(phone){
       margin-right: 1rem;
@@ -23,15 +23,15 @@
       padding-left: 8rem;
     }
     &_head{
-      text-align: right;
-       font-size: 3rem;
+      text-align: center;
+       font-size: 2.5rem;
        text-transform: uppercase;
        margin-bottom: 2rem;
        color: $color-grey;
        font-weight: bold;
     }
     &_content{
-      text-align: right;
+      text-align: center;
        font-size: 1.5rem;
        margin-bottom: 3rem;
        color: $color-black;
@@ -107,21 +107,40 @@
 }
 
 .change1{
-  animation: change1 .5s linear 1;
+  animation: reach 1s linear 1;
 }
 .change2{
-  animation: change2 .5s linear 1;
+  animation: reach2 1s linear 1;
 }
 .change3{
-  animation: change3 .5s linear 1;
+  animation: reach3 1s linear 1;
 }
 .change4{
-  animation: change4 .5s linear 1;
+  animation: reach4 1s linear 1;
 }
 .change5{
-  animation: change5 .5s linear 1;
+  animation: reach5 1s linear 1;
 }
 
+
+.whyus1{
+  animation: change1 .6s linear 1;
+}
+.whyus2{
+  animation: change2 .6s linear 1;
+}
+.whyus3{
+  animation: change3 .6s linear 1;
+}
+.whyus4{
+  animation: change4 .6s linear 1;
+}
+.whyus5{
+  animation: change5 .6s linear 1;
+}
+$coral:coral;
 .selectedId2{
-  border: 5px solid #3527a9;
+  border: 5px solid coral;
+  transform: scale(1.2);
+  box-shadow: 0 0 2rem rgba($coral,.5);
 }

@@ -109,7 +109,7 @@ class Whyus extends Component {
             <div className="landing__8_box-images">
               <img className="BUBBLE" src={this.state.selectedId === 0 ? first : this.state.selectedId === 1 ? certified : this.state.selectedId === 2 ? guarantee : this.state.selectedId === 3 ? water : nature} alt="" />
             </div>
-            <div className={(this.state.selectedId===0)?"landing__8_box-text change1":(this.state.selectedId===1)?"landing__8_box-text change2":(this.state.selectedId===2)?"landing__8_box-text change3":(this.state.selectedId===3)?"landing__8_box-text change4":"landing__8_box-text change5"}>
+            <div className={(this.state.selectedId===0)?"landing__8_box-text whyus1":(this.state.selectedId===1)?"landing__8_box-text whyus2":(this.state.selectedId===2)?"landing__8_box-text whyus3":(this.state.selectedId===3)?"landing__8_box-text whyus4":"landing__8_box-text whyus5"}>
               <div className="landing__8_box-text--big">{this.state.cos[this.state.selectedId].title}</div>
               <div className="landing__8_box-text--small">{this.state.cos[this.state.selectedId].content}</div>
             </div>

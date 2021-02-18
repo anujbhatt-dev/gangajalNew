@@ -47,7 +47,9 @@ import ripples from 'jquery.ripples'
                <img src={namaste} alt=""/>
                <img className="landing__s1_img" src={logo} alt=""/>
                <div>
-                {this.state.namaste}
+                {
+                  // this.state.namaste
+                }
                </div>
           </div>
       )

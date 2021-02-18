@@ -1,0 +1,129 @@
+$coral:coral;
+
+.about{
+  animation: reach 1s linear;
+  margin-top: 7rem;
+  @include respond(phone){
+     margin-top: 0rem;
+  };
+  &__heading{
+    background: rgba(27,217,195,1);
+    margin: 0;
+    padding: 5rem;
+    background: $coral;
+    align-items: flex-start;
+    transform:  rotate(350deg);
+    font-size: 3.6rem;
+    color: $color-black;
+    font-weight: bolder;
+    text-transform: uppercase;
+    text-align: center;
+    @include respond(phone){
+       transform:  rotate(0deg);
+       padding-top: 15rem;
+    };
+  }
+  background: rgb(255,255,255);
+  &__row{
+    background: linear-gradient(350deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.9335084375547094) 36%, $coral 36%);
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include respond(phone){
+       justify-content: space-between;
+    };
+    & > *{
+      margin: 1rem;
+    }
+    &_img{
+      height: 50vh;
+      width: 35rem;
+      object-fit: cover;
+      object-position: center;
+    }
+    &_text{
+      color: $color-white;
+      max-width: 50rem;
+      font-size: 1.5rem;
+      line-height: 1.5;
+      transform:  rotate(350deg);
+      @include respond(phone){
+         transform:  rotate(0deg);
+      };
+    }
+    flex-flow: column;
+    @include respond(phone){
+       & > *{
+         margin: 1rem;
+       }
+       &_img{
+         height: 50vh;
+         width: auto;
+         object-fit: cover;
+         object-position: center;
+       }
+    }
+  }
+  &__3{
+    padding-right: 10rem;
+
+    transform: translateY(-60%) rotate(-190deg);
+    @include respond(phone){
+       transform: translateY(-150%) translateX(10%) rotate(350deg);
+
+    };
+    align-self: flex-end;
+    justify-content: flex-end;
+    &_head{
+      text-align: center;
+      font-size: 1.5rem;
+      // font-weight: bold;
+      margin: 1rem;
+      text-transform: uppercase;
+    }
+    &_row{
+      display: flex;
+      // justify-content: space-between;
+      justify-content: flex-end;
+      flex-wrap: wrap;
+      &-box{
+        margin: 1rem;
+        margin-left: 2rem;
+        text-transform: uppercase;
+        text-align: center;
+        @include respond(phone){
+           text-align: right;
+        };
+        cursor: pointer;
+        // flex-grow: 1;
+        &--head{
+          font-size: 2rem;
+          font-weight: bold;
+          margin-bottom: 2.5rem;
+          text-decoration: none;
+          & a{
+            color: $coral;
+
+          }
+          transition: all .3s;
+          &:hover{
+            transform: translateY(-3px);
+          }
+        }
+        }
+        // &-last{
+        //   flex-grow: 3;
+        // }
+        & ul{
+          list-style: none;
+          & li{
+            font-size: 1.3rem;
+            color: $color-grey;
+            margin-bottom: 1.5rem;
+
+        }
+      }
+    }
+  }
+}

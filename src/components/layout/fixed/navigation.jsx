@@ -58,7 +58,7 @@ import {NavLink} from "react-router-dom"
                        about
                     </NavLink>
                   <NavLink  onClick={()=>this.routeHandler("reachus")} exact activeStyle={{color:"#0e9bd7"}} to="/reachus"  id="contact" className="nav__item">
-                      reach us out
+                      reach
                    </NavLink>
              </div>
       )

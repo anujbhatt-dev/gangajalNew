@@ -43,14 +43,14 @@ class Layout extends Component{
   render(){
     return (
       // <Footer/>
-      // <Loader loaded={this.state.loaded}/>
         <div className="layout">
+            <Loader loaded={this.state.loaded}/>
             <img id="logo" className="landing__s1_img" src={logo} alt="" />
             {this.state.mobile?<NavMob/>:<Nav/>}
             <Switch>
             <Route exact path="/">
-                   <Landing/>
-                   <Wave/>
+                   <Landing mobile={this.state.mobile}/>
+                   {!this.state.mobile?<Wave/>:null}
                </Route>
                <Route exact path="/reachus">
                    <Contact/>

@@ -83,7 +83,7 @@ export default class Benefits extends Component {
 
             })
 
-        }, 2000);
+        }, 4000);
 
     }
 

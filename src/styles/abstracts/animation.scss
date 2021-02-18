@@ -63,6 +63,56 @@
    }
 }
 
+@keyframes reach2 {
+   0%{
+     clip-path: polygon(75% 0, 100% 0, 100% 30%, 88% 16%);
+   }
+   50%{
+     clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 50%);
+   }
+   100%{
+     clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+   }
+}
+
+@keyframes reach3 {
+   0%{
+     clip-path: polygon(75% 0, 100% 0, 100% 30%, 88% 16%);
+   }
+   50%{
+     clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 50%);
+   }
+   100%{
+     clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+   }
+}
+
+
+@keyframes reach4 {
+   0%{
+     clip-path: polygon(75% 0, 100% 0, 100% 30%, 88% 16%);
+   }
+   50%{
+     clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 50%);
+   }
+   100%{
+     clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+   }
+}
+
+@keyframes reach5 {
+   0%{
+     clip-path: polygon(75% 0, 100% 0, 100% 30%, 88% 16%);
+   }
+   50%{
+     clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 50%);
+   }
+   100%{
+     clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+   }
+}
+
+
 @keyframes home {
     0%{
        clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
@@ -132,6 +182,16 @@
   }
 }
 @keyframes change5   {
+  0%{
+    opacity: 0;
+    transform: scale(0);
+  }
+  100%{
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@keyframes change6   {
   0%{
     opacity: 0;
     transform: scale(0);

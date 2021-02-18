@@ -27,11 +27,11 @@ import {NavLink} from "react-router-dom"
                     <NavLink onClick={this.toggleHandler} exact activeStyle={{color:"#fff",background:"#333"}} to="/" id="home" className="nav__item nav__home">
                         Home
                      </NavLink>
-                     <NavLink onClick={this.toggleHandler} exact activeStyle={{color:"#0e9bd7"}} to="/reachUs"  id="contact" className="nav__item">
-                         Reach us
-                      </NavLink>
                       <NavLink onClick={this.toggleHandler} exact activeStyle={{color:"#0e9bd7"}} to="/about"  id="about" className="nav__item ">
                           about
+                       </NavLink>
+                       <NavLink onClick={this.toggleHandler} exact activeStyle={{color:"#0e9bd7"}} to="/reachus"  id="contact" className="nav__item">
+                       Reach
                        </NavLink>
                 </div>
           </div>

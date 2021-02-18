@@ -105,7 +105,7 @@ class Landing extends Component {
           <ScrollPage page={1}>
             <Animator animation={batch(Fade(), MoveOut(0, -200))}>
               <Whyus />
-              <hr className="hr" />
+
             </Animator>
           </ScrollPage>
 
@@ -117,7 +117,7 @@ class Landing extends Component {
                 <h1 id="1" className="page__head">call us <span onClick={this.nowHandler} className="page__head_span">now</span> </h1>
 
               </div>
-              <hr className="hr" />
+
             </Animator>
           </ScrollPage>
 
@@ -127,7 +127,7 @@ class Landing extends Component {
             <Animator animation={batch(Fade())}>
               <h1 id="3" className="heading-primary">benifits of gangajal</h1>
               <Benefits mobile={this.props.mobile} />
-              <hr className="hr" />
+
             </Animator>
           </ScrollPage>
 
