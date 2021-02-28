@@ -23,7 +23,7 @@ class Layout extends Component{
     mobile:false
   }
 
-//push push
+//push push  push
 
   componentDidMount=()=>{
      setTimeout(()=>{
