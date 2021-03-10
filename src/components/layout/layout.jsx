@@ -20,7 +20,8 @@ class Layout extends Component{
 
   state={
     loaded:false,
-    mobile:false
+    mobile:false,
+    language:1  //1:english, -1:hindi
   }
 
 
@@ -40,29 +41,40 @@ class Layout extends Component{
   }
 
 
+  switchLanguage=()=>{
+
+   this.setState((s)=>{return {language:-1*s.language}});
+
+  }
+
+
   render(){
     return (
       // <Footer/>
         <div className="layout">
             <Loader loaded={this.state.loaded}/>
             <img id="logo" className="landing__s1_img" src={logo} alt="" />
+            <button onClick={this.switchLanguage} className="landing__s1_img">TOGGLER</button>
             {this.state.mobile?<NavMob/>:<Nav/>}
+            
             <Switch>
             <Route exact path="/">
-                   <Landing mobile={this.state.mobile}/>
+            
+                   <Landing mobile={this.state.mobile} language={this.state.language}/>
+                   
                    {!this.state.mobile?<Wave/>:null}
                </Route>
                <Route exact path="/reachus">
-                   <Contact/>
+                   <Contact language={this.state.language}/>
                </Route>
                <Route exact path="/about">
-                   <About/>
+                   <About language={this.state.language}/>
                </Route>
                <Route exact path="/benefits">
-                   <Benefits/>
+                   <Benefits language={this.state.language}/>
                </Route>
                <Route exact path="/whyus">
-                   <Whyus/>
+                   <Whyus language={this.state.language}/>
                </Route>
 
 

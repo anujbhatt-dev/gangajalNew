@@ -20,32 +20,42 @@ export default class Benefits extends Component {
             {
                 id: 0,
                 icon: "",
-                title: "0",
-                description: "0",
+                titleE: "0",
+                descriptionE: "0",
+                titleH: "0",
+                descriptionH: "0",
             },
             {
                 id: 1,
                 icon: "",
-                title: "1",
-                description: "1",
+                titleE: "1",
+                descriptionE: "1",
+                titleH: "0",
+                descriptionH: "0",
             },
             {
                 id: 2,
                 icon: "",
-                title: "2",
-                description: "2",
+                titleE: "2",
+                descriptionE: "2",
+                titleH: "0",
+                descriptionH: "0",
             },
             {
                 id: 3,
                 icon: "",
-                title: "3",
-                description: "3",
+                titleE: "3",
+                descriptionE: "3",
+                titleH: "0",
+                descriptionH: "0",
             },
             {
                 id: 4,
                 icon: "",
-                title: "4",
-                description: "4",
+                titleE: "4",
+                descriptionE: "4",
+                titleH: "0",
+                descriptionH: "0",
             },
 
         ],
@@ -150,8 +160,8 @@ export default class Benefits extends Component {
       <div className={(this.state.selectedId===4)?"benefits__svg benefits__svg5 selectedId2":"benefits__svg benefits__svg5"} onClick={()=>this.changeHandler(4)}><img  src={hands} alt=""/></div>
 
       <div className={(this.state.selectedId===0)?"benefits__text change1":(this.state.selectedId===1)?"benefits__text change2":(this.state.selectedId===2)?"benefits__text change3":(this.state.selectedId===3)?"benefits__text change4":"benefits__text change5"}>
-         <div className={"benefits__text_head"}>{this.state.benefits[this.state.selectedId].title} Lorem ipsum dolor.</div>
-         <div className="benefits__text_content">{this.state.benefits[this.state.selectedId].description} Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit odio eligendi cum fugiat animi non, alias molestiae neque iure est, numquam. Corporis culpa velit ipsam eveniet voluptatem sit, deleniti alias quia architecto, nisi quisquam vero distinctio voluptates, fugit exercitationem ipsa expedita voluptatum? Voluptates libero odit, in minus similique esse unde ullam, ipsa. Consequatur ab, ipsum obcaecati, eius modi reiciendis cupiditate suscipit sit autem iste nesciunt quidem, numquam doloribus, rem corrupti voluptate adipisci qui accusantium laborum? Eligendi delectus quae incidunt maxime fugit saepe quasi, cupiditate sed, neque inventore illo ducimus ipsum repudiandae sequi. Veniam exercitationem, officia illo perferendis eos saepe dolore.</div>
+         <div className={"benefits__text_head"}>{this.state.benefits[this.state.selectedId][this.props.language===1?"titleE":"titleH"]} Lorem ipsum dolor.</div>
+         <div className="benefits__text_content">{this.state.benefits[this.state.selectedId][this.props.language===1?"descriptionE":"descriptionH"]} Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit odio eligendi cum fugiat animi non, alias molestiae neque iure est, numquam. Corporis culpa velit ipsam eveniet voluptatem sit, deleniti alias quia architecto, nisi quisquam vero distinctio voluptates, fugit exercitationem ipsa expedita voluptatum? Voluptates libero odit, in minus similique esse unde ullam, ipsa. Consequatur ab, ipsum obcaecati, eius modi reiciendis cupiditate suscipit sit autem iste nesciunt quidem, numquam doloribus, rem corrupti voluptate adipisci qui accusantium laborum? Eligendi delectus quae incidunt maxime fugit saepe quasi, cupiditate sed, neque inventore illo ducimus ipsum repudiandae sequi. Veniam exercitationem, officia illo perferendis eos saepe dolore.</div>
       </div>
 
 </div>

@@ -97,14 +97,14 @@ class Landing extends Component {
             <Animator animation={batch(Fade(), Sticky(), MoveOut(0, -200))}>
 
               <div className={"page page0"}>
-                <Start />
+                <Start  language={this.props.language}/>
               </div>
             </Animator>
           </ScrollPage>
 
           <ScrollPage page={1}>
             <Animator animation={batch(Fade(), MoveOut(0, -200))}>
-              <Whyus />
+              <Whyus language={this.props.language} />
 
             </Animator>
           </ScrollPage>
@@ -112,8 +112,15 @@ class Landing extends Component {
           <ScrollPage page={2}>
             <Animator animation={ZoomInScrollOut}>
               <div className={"page page1 page11"}>
-                <p className="page__text">Want to be our part, Become the first AyushGangjal dealer of your region and enjoy the remarkable profit.
-                   Let's have a chat.</p>
+                <p className="page__text">
+                  
+                  {this.props.language===1?
+                  
+                  `Want to be our part, Become the first AyushGangjal dealer of your region and enjoy the remarkable profit.
+                   Let's have a chat.`
+                  :
+                   `HINDI CALL`}
+                    </p>
                 <h1 id="1" className="page__head">call us <span onClick={this.nowHandler} className="page__head_span">now</span> </h1>
 
               </div>
@@ -126,7 +133,7 @@ class Landing extends Component {
           <ScrollPage page={3}>
             <Animator animation={batch(Fade())}>
               <h1 id="3" className="heading-primary">benifits of gangajal</h1>
-              <Benefits mobile={this.props.mobile} />
+              <Benefits mobile={this.props.mobile} language={this.props.language} />
 
             </Animator>
           </ScrollPage>
