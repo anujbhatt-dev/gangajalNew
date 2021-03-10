@@ -54,10 +54,10 @@ import {NavLink} from "react-router-dom"
                <NavLink onClick={()=>this.routeHandler("home")} exact activeStyle={{color:"#fff",background:"#333"}} to="/" id="home" className="nav__item nav__home">
                      Home
                   </NavLink>
-                  <NavLink  onClick={()=>this.routeHandler("about")} exact activeStyle={{color:"#0e9bd7"}} to="/about"  id="about" className="nav__item ">
+                  <NavLink  onClick={()=>this.routeHandler("about")} exact activeStyle={{color:"#0e9bd7",transform:"scale(1.2)"}} to="/about"  id="about" className="nav__item ">
                        about
                     </NavLink>
-                  <NavLink  onClick={()=>this.routeHandler("reachus")} exact activeStyle={{color:"#0e9bd7"}} to="/reachus"  id="contact" className="nav__item">
+                  <NavLink  onClick={()=>this.routeHandler("reachus")} exact activeStyle={{color:"#0e9bd7",transform:"scale(1.2)"}} to="/reachus"  id="contact" className="nav__item">
                       reach
                    </NavLink>
              </div>

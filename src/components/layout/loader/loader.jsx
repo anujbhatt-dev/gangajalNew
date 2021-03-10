@@ -45,7 +45,7 @@ import ripples from 'jquery.ripples'
       return (
           <div className={this.props.loaded?"loader loaded":"loader"}>
                <img src={namaste} alt=""/>
-               <img className="landing__s1_img" src={logo} alt=""/>
+               <div id="logo" className="footer__name landing__s1_img"><img className="footer__img" src={logo} alt=""/> <div>Ayush Gangajal</div></div>
                <div>
                 {
                   // this.state.namaste

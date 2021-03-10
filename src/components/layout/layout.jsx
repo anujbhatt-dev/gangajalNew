@@ -24,6 +24,7 @@ class Layout extends Component{
     language:1  //1:english, -1:hindi
   }
 
+//push push  push
 
   componentDidMount=()=>{
      setTimeout(()=>{
@@ -53,7 +54,8 @@ class Layout extends Component{
       // <Footer/>
         <div className="layout">
             <Loader loaded={this.state.loaded}/>
-            <img id="logo" className="landing__s1_img" src={logo} alt="" />
+
+            <div id="logo" className="landing__s1_img"><img className="landing__s1_i" src={logo} alt=""/> <div className="landing__s1_1">Ayush Gangajal</div> <div className="landing__s1_2"></div> </div>
             <button onClick={this.switchLanguage} className="landing__s1_img">TOGGLER</button>
             {this.state.mobile?<NavMob/>:<Nav/>}
             

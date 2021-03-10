@@ -5,7 +5,20 @@
   align-items: center;
   background: linear-gradient(to top,rgba(255,165,0,.3),$color-white);
   position: relative;
+
+  &_1{
+    font-size: 2rem;
+  }
+  &_2{
+    font-size: 2rem;
+  }
   &_img{
+    color: $color-white;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     z-index: 2;
     position: absolute;
     top: 2rem;
